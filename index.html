@@ -6,173 +6,160 @@
     <title>Viper Panel Privacy Policy</title>
     <style>
         :root {
-          --bg: #0f0f17;
-          --card: rgba(255, 255, 255, 0.06);
+          color-scheme: light dark;
+          --bg: #0d111a;
+          --surface: #0f172a;
+          --card: #111c2f;
           --text: #f5f7ff;
-          --muted: #b8bfd3;
-          --accent: #8b5cf6;
-          --accent-2: #00d4b8;
-          --border: rgba(255, 255, 255, 0.12);
-          --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+          --muted: #b5bed0;
+          --accent: #7c5cff;
+          --accent-soft: rgba(124, 92, 255, 0.14);
+          --border: rgba(255, 255, 255, 0.08);
+          --shadow: 0 24px 50px rgba(0, 0, 0, 0.38);
         }
 
         @media (prefers-color-scheme: light) {
           :root {
-            --bg: #f5f7fb;
-            --card: rgba(255, 255, 255, 0.85);
-            --text: #1e2430;
-            --muted: #5f6b7a;
+            --bg: #f6f7fb;
+            --surface: #ffffff;
+            --card: #ffffff;
+            --text: #111827;
+            --muted: #5b6475;
             --accent: #6d4aff;
-            --accent-2: #00b89c;
+            --accent-soft: rgba(109, 74, 255, 0.12);
             --border: rgba(0, 0, 0, 0.08);
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
           }
         }
 
-        * {
-          box-sizing: border-box;
-        }
-
-        html {
-          scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
           margin: 0;
           font-family: "Inter", "Segoe UI", Arial, sans-serif;
-          background:
-            radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 30%),
-            radial-gradient(circle at bottom right, rgba(0, 212, 184, 0.15), transparent 25%),
-            var(--bg);
+          background: var(--bg);
           color: var(--text);
           line-height: 1.7;
-          padding: 24px;
-          transition: background 0.3s ease, color 0.3s ease;
+          padding: 18px;
+          transition: background 200ms ease, color 200ms ease;
         }
 
         .container {
-          max-width: 900px;
+          max-width: 880px;
           margin: 0 auto;
+          background: var(--surface);
+          border: 1px solid var(--border);
+          border-radius: 16px;
+          box-shadow: var(--shadow);
+          overflow: hidden;
         }
 
         .hero {
-          text-align: center;
-          padding: 48px 24px 32px;
-          margin-bottom: 24px;
-          border: 1px solid var(--border);
-          border-radius: 24px;
-          background: var(--card);
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
-          box-shadow: var(--shadow);
+          padding: 22px 20px 12px;
+          border-bottom: 1px solid var(--border);
+          background: linear-gradient(135deg, var(--accent-soft), transparent 60%), var(--surface);
         }
 
         .badge {
-          display: inline-block;
-          padding: 8px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 7px 12px;
           border-radius: 999px;
-          font-size: 13px;
-          font-weight: 600;
-          color: var(--accent-2);
-          background: rgba(0, 212, 184, 0.12);
-          border: 1px solid rgba(0, 212, 184, 0.2);
-          margin-bottom: 16px;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          color: var(--accent);
+          background: var(--accent-soft);
         }
 
         h1 {
-          margin: 0;
-          font-size: clamp(2rem, 4vw, 3rem);
+          margin: 8px 0 4px;
+          font-size: 24px;
           font-weight: 800;
-          letter-spacing: -0.03em;
-          background: linear-gradient(135deg, var(--accent), var(--accent-2));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          letter-spacing: -0.01em;
         }
 
         .subtitle {
-          margin-top: 14px;
+          margin: 0;
           color: var(--muted);
-          font-size: 16px;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
+          font-size: 14px;
+          max-width: 680px;
         }
 
         .effective-date {
-          margin-top: 18px;
-          font-size: 14px;
+          margin-top: 10px;
+          font-size: 13px;
           color: var(--muted);
         }
 
         .grid {
           display: grid;
-          gap: 18px;
+          gap: 12px;
+          padding: 14px 16px 18px;
         }
 
         .card {
           background: var(--card);
           border: 1px solid var(--border);
-          border-radius: 20px;
-          padding: 24px;
-          box-shadow: var(--shadow);
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
-          transition: transform 0.2s ease, border-color 0.2s ease;
+          border-radius: 12px;
+          padding: 14px 16px;
+          transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
         }
 
         .card:hover {
-          transform: translateY(-2px);
-          border-color: rgba(139, 92, 246, 0.35);
+          transform: translateY(-1px);
+          border-color: var(--accent-soft);
+          box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
         }
 
         h2 {
-          margin-top: 0;
-          margin-bottom: 12px;
-          font-size: 1.2rem;
+          margin: 0 0 6px;
+          font-size: 16px;
           color: var(--text);
         }
 
         p {
-          margin: 0 0 12px;
+          margin: 0 0 10px;
           color: var(--muted);
+          font-size: 14px;
         }
 
-        strong {
-          color: var(--text);
+        strong { color: var(--text); }
+
+        ul, ol {
+          color: var(--muted);
+          padding-left: 18px;
+          margin: 6px 0 0;
         }
+
+        li + li { margin-top: 4px; }
 
         a {
-          color: var(--accent-2);
+          color: var(--accent);
           text-decoration: none;
           font-weight: 600;
         }
 
-        a:hover {
-          text-decoration: underline;
-        }
+        a:hover { text-decoration: underline; }
 
         .footer {
           text-align: center;
-          margin-top: 28px;
+          padding: 12px 14px 14px;
           color: var(--muted);
-          font-size: 14px;
-          padding: 20px;
+          font-size: 12px;
+          border-top: 1px solid var(--border);
+          background: var(--surface);
         }
 
-        @media (max-width: 600px) {
-          body {
-            padding: 16px;
-          }
-
-          .hero,
-          .card {
-            padding: 20px;
-            border-radius: 18px;
-          }
-
-          .subtitle {
-            font-size: 15px;
-          }
+        @media (max-width: 640px) {
+          body { padding: 12px; }
+          .container { border-radius: 12px; }
+          .hero { padding: 18px 16px 10px; }
+          h1 { font-size: 21px; }
+          .grid { padding: 12px 12px 14px; }
+          .card { padding: 12px 14px; }
         }
     </style>
 </head>
