@@ -3,63 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCS VPN Privacy Policy</title>
+    <title>Viper Panel Privacy Policy</title>
     <style>
+        :root {
+            --bg: #180032;
+            --fg: #ffffff;
+            --accent-1: #9370DB;
+            --accent-2: #01ffc1;
+            --link: #01ffc1;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f8f8ff;
+                --fg: #1a1a1a;
+                --accent-1: #6a5acd;
+                --accent-2: #00bfa6;
+                --link: #00bfa6;
+            }
+        }
+
         body {
-            font-family: Courier New, (monospace);
+            font-family: Courier New, monospace;
             margin: 20px;
-            background-color: #180032;
-            color:#fff;
-        } 
+            background-color: var(--bg);
+            color: var(--fg);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
         h1, h2 {
-            background: linear-gradient(50deg, #9370DB, #01ffc1);
+            background: linear-gradient(50deg, var(--accent-1), var(--accent-2));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        p {
-            color: #fff;
+        p, li {
+            color: var(--fg);
+            line-height: 1.6;
         }
 
+        a {
+            color: var(--link);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        section {
+            margin-bottom: 18px;
+        }
     </style>
 </head>
 <body>
+    <h1>Viper Panel Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> March 13, 2026</p>
 
-    <h1>NCS VPN Privacy Policy</h1>
+    <section>
+        <h2>Introduction</h2>
+        <p>Viper Panel allows you to access and manage your own servers through a panel management system. This Privacy Policy explains what information the app handles, how it is used, and the choices you have. It is designed to meet Google Play’s User Data and Data Safety requirements.</p>
+    </section>
 
-    <p><strong>Effective Date:</strong> February 24, 2025</p>
+    <section>
+        <h2>Information We Collect</h2>
+        <ul>
+            <li><strong>Credentials you provide:</strong> usernames, passwords, tokens, or API keys needed to sign in to your servers or panels.</li>
+            <li><strong>Server/panel configurations:</strong> host addresses, ports, profile names, and settings you add to operate your infrastructure.</li>
+            <li><strong>Diagnostics (optional/limited):</strong> crash logs and basic performance data to keep the app stable. No browsing history or precise location is collected.</li>
+            <li><strong>Device info (minimal):</strong> device model, OS version, and network status only to troubleshoot connectivity.</li>
+        </ul>
+        <p>We do not collect your name, contact list, photos, or other sensitive categories, and we do not track you across apps or websites.</p>
+    </section>
 
-    <h2>Introduction</h2>
+    <section>
+        <h2>How We Use Information</h2>
+        <ul>
+            <li>Authenticate you to the servers and panels you configure.</li>
+            <li>Display and execute panel functions you request.</li>
+            <li>Maintain security, performance, and reliability of the app.</li>
+            <li>Comply with legal obligations if required.</li>
+        </ul>
+    </section>
 
-    <p>NCS VPN is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our NCS VPN app for Android ("App").</p>
+    <section>
+        <h2>Data Sharing</h2>
+        <p>We do not sell your data. We do not share it with third parties except:</p>
+        <ul>
+            <li>When you connect to services or APIs you configure (data goes directly to those endpoints).</li>
+            <li>When required by law or to protect user safety.</li>
+            <li>With service providers under confidentiality (e.g., crash analytics) strictly to support the app.</li>
+        </ul>
+    </section>
 
-    <h2>Information We Collect</h2>
+    <section>
+        <h2>Data Storage & Retention</h2>
+        <p>Credentials and configurations are stored locally on your device and remain until you delete them or uninstall the app. Diagnostic data, if sent, is retained only as long as needed to resolve issues and then deleted or anonymized.</p>
+    </section>
 
-    <p>We do not collect or retain any personal data that can identify you, such as your name, email address, IP address, or browsing history.</p>
+    <section>
+        <h2>Security</h2>
+        <p>We use encrypted transport (e.g., HTTPS) where supported and apply reasonable safeguards to protect stored data. No method is 100% secure; please keep your device and credentials protected.</p>
+    </section>
 
-    <h2>Third-Party Advertising</h2>
+    <section>
+        <h2>Your Choices</h2>
+        <ul>
+            <li>Edit or delete saved servers/accounts inside the app.</li>
+            <li>Decline or disable optional diagnostics (if offered).</li>
+            <li>Uninstall the app to remove local data.</li>
+            <li>Contact us for access, correction, or deletion requests.</li>
+        </ul>
+    </section>
 
-    <p>Our App uses AdMob to display advertisements. AdMob may collect certain information about your device and your activity within the App, such as your device ID, advertising ID, IP address, and location. AdMob may use this information to serve you personalized ads.</p>
+    <section>
+        <h2>Children</h2>
+        <p>This app is intended for users 16 and older. We do not knowingly collect data from children. If you believe a child has provided data, contact us to delete it.</p>
+    </section>
 
-    <h2>Your Choices</h2>
+    <section>
+        <h2>International Transfers</h2>
+        <p>Data is primarily stored on your device. If diagnostics or support data is processed on our systems, it may be handled in the United States or other locations consistent with this policy and applicable law.</p>
+    </section>
 
-    <p>You can opt out of personalized advertising by adjusting your device settings.</p>
+    <section>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy. The effective date will change when we do. Material updates will be highlighted in-app or on this page.</p>
+    </section>
 
-    <h2>Data Security</h2>
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you have questions or requests about this Privacy Policy, contact us at <a href="mailto:viperpanel2026@gmail.com">viperpanel2026@gmail.com</a>.</p>
+    </section>
 
-    <p>We take security measures to protect your information from unauthorized access and use.</p>
-
-    <h2>Changes to This Privacy Policy</h2>
-
-    <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated Privacy Policy on this page.</p>
-
-    <h2>Contact Us</h2>
-
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:ncsvpn6@gmail.com">ncsvpn6@gmail.com</a>.</p>
-
-    <h2>Additional Information for Android Users</h2>
-
-    <p>NCS VPN complies with Google Play's Developer Program Policies regarding privacy and data security.</p>
-
+    <section>
+        <h2>Google Play Compliance</h2>
+        <p>Viper Panel aligns with Google Play’s User Data, Data Safety, and Families policies. The Data Safety form will reflect the collection, use, and sharing described above, and the app honors user choices provided by the Play Console declarations.</p>
+    </section>
 </body>
 </html>
